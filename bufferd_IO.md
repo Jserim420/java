@@ -19,33 +19,33 @@ String s = bf.readLine();
 int i = Integer.paseInt(bf.readLine());
 // String형 s를 int형으로 형변환하기 위함이다.
 ```
-- ButteredReader에서 읽어들인 데이터의 값은 String으로 고정되기 때문에 필요에 따라 형변환을 한다.
+- ```BufferedReader```에서 읽어들인 데이터의 값은 ```String```으로 고정되기 때문에 필요에 따라 형변환을 한다.
 - 예외처리 : ```try-catch``` 또는 ```throws IOException```
 
 <br>
 
 ## Read한 데이터 가공하기
-- Read한 데이터는 Line단위로만 나눠지기 때문에 공백단위로 데이터를 가공하려면 따로 작업을 해주어야 한다.
+- ```Read```한 데이터는 ```Line```단위로만 나눠지기 때문에 공백단위로 데이터를 가공하려면 따로 작업을 해주어야 한다.
 
 1. StringTokenizer 
     ```java
     StringTokenizer st = new StringTokenizer(s);
     int a = Integer.parseInt(st.nextToken());
     ```
-    - StringTokenizer는 [여기]()를 참조
+    - ```StringTokenizer```는 [여기]()를 참조
 
 2. String.split(" ");
     ```java
     String array[] = s.split(" ");
     ``` 
-    - String.split();은 [여기](https://github.com/Jserim420/java/blob/main/split.md)를 참조
+    - ```String.split();```은 [여기](https://github.com/Jserim420/java/blob/main/split.md)를 참조
 
 
 <br>
 
 ## BufferedWriter
 - 일반적인 출력은 ```System.out.println();``` 을 사용
-- 많은 양의 데이터를 출력할 때는 ```BufferedWriter``를 사용
+- 많은 양의 데이터를 출력할 때는 ```BufferedWriter```를 사용
 ```java
 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 //BufferedWriter 선언
