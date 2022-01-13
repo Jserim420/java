@@ -32,13 +32,13 @@ int i = Integer.paseInt(bf.readLine());
     StringTokenizer st = new StringTokenizer(s);
     int a = Integer.parseInt(st.nextToken());
     ```
-    - StringTokenizer는 <a>여기</a>를 참조
+    - StringTokenizer는 [여기]()를 참조
 
 2. String.split(" ");
     ```java
     String array[] = s.split(" ");
     ``` 
-    - String.split();은 <a>여기</a>를 참조
+    - String.split();은 [여기](https://github.com/Jserim420/java/blob/main/split.md)를 참조
 
 
 <br>
@@ -67,8 +67,7 @@ bw.write(100);
 bw.flush();
 bw.close();
 ```
-결과 
-> d (아스키코드로 출력됨)
+> 결과 <br> d (아스키코드로 출력됨)
 
 ```java
 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -76,7 +75,6 @@ bw.write(100+"");
 bw.flush();
 bw.close();
 ```
-결과
-> 100 (정상출력) 
+> 결과 <br> 100 (정상출력) 
 
 String형으로 변환시켜주면 정상출력된다.

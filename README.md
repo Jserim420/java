@@ -3,8 +3,8 @@
 - 자바 개념
 - 자바 함수 정리
     - 문자열 관련 함수
-        - String.split();
+        - [String.split();](https://github.com/Jserim420/java/blob/main/split.md)
         - StringTokenizer();
     - 입출력 관련 함수
         - Scanner();
-        - BufferdReader(); / BufferedWriter();
+        - [BufferdReader(); / BufferedWriter();](https://github.com/Jserim420/java/blob/main/bufferd_IO.md)
