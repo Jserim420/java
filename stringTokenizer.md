@@ -4,12 +4,23 @@
     ```java
     StringTokenizer st = new StringTokenizer("문자열","구분자");
     ```
-- 구분자를 생략하면 space가 기본 구분자가 된다.
+- 구분자를 생략하면 space(공백)가 기본 구분자가 된다.
     ```java
-    String phoneNo = "010-1234-5678";
-    StringTokenizer st = new StringTokenizer(phoneNo, "-");
-    // 문자열이 "-"로 구분되어 있는 경우
+    StringTokenizer st = new StringTokenizer("문자열");
     ```
+- 구분자도 토큰에 포함할지 여부를 정할 수도 있다.
+    ```java
+    StringTokenizer st = new StringTokenizer("문자열","구분자",true/false);
+    // true는 토큰에 포함, false는 토큰에 미포함이며 생략하면 false가 기본이 된다.
+    ```
+
+```java
+String phoneNo = "010-1234-5678";
+StringTokenizer st = new StringTokenizer(phoneNo, "-");
+// 문자열이 "-"로 구분되어 있는 경우
+```
+
+<br>
 
 - ```StringTokenizer``` 객체가 생성되면 부분 문자열을 분리해 낼 수 있는데, 다음 메소드를 이용해 전체 토큰 수, 남아 있는 토큰 여부를 확인한 후 토큰을 일근다.
     - int형 ```countTonkens()``` : 꺼내지 않고 남아 있는 토큰의 수
@@ -21,6 +32,7 @@
     >    ```nextToken()```을 사용하기 전에 ```hasMoreTokens()``` 메소드로 꺼내올 토큰이 있는지 조사한 후 ```nextToken()``` 메소드를 호출하는 것이 좋다.
 
 <br>
+<Br>
 
 ## StringTokenizer 예시
 ```java
