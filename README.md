@@ -1,7 +1,7 @@
 # JAVA
 
 - 자바 개념
-    - 객체 지향 프로그래밍(OOP)
+    - [객체 지향 프로그래밍(OOP)](https://github.com/Jserim420/java/blob/main/Java-study/OOP.md)
     - 상수(static, final, static final)
     - 접근제한자
     - 어노테이션
