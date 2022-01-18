@@ -22,7 +22,7 @@ StringTokenizer st = new StringTokenizer(phoneNo, "-");
 
 <br>
 
-- ```StringTokenizer``` 객체가 생성되면 부분 문자열을 분리해 낼 수 있는데, 다음 메소드를 이용해 전체 토큰 수, 남아 있는 토큰 여부를 확인한 후 토큰을 일근다.
+- ```StringTokenizer``` 객체가 생성되면 부분 문자열을 분리해 낼 수 있는데, 다음 메소드를 이용해 전체 토큰 수, 남아 있는 토큰 여부를 확인한 후 토큰을 읽는다.
     - int형 ```countTonkens()``` : 꺼내지 않고 남아 있는 토큰의 수
     - boolean형 ```hasMoreTokens()``` : 남아 있는 토큰이 있는지 여부
     - String형 ```nextToken()``` : 토큰을 하나씩 꺼내옴
