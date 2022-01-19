@@ -11,7 +11,7 @@ import java.util.Scanner;
     ```java
     Scanner sc = new Scanner(System.in);
     ```
-    - Scnnaer 입력 메소드
+    - ```Scanner``` 입력 메소드
     ```java
     sc.nextByte()		// byte 형 입력 및 리턴
     sc.nextShort()		// short 형 입력 및 리턴
