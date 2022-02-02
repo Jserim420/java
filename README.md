@@ -16,3 +16,5 @@
     - 입출력 관련 함수
         - [Scanner();](https://github.com/Jserim420/java/blob/main/Scanner.md)
         - [BufferdReader(); / BufferedWriter();](https://github.com/Jserim420/java/blob/main/bufferd_IO.md)
+    - 기타
+        - 객체타입 확인 - [instanceof();](https://github.com/Jserim420/java/blob/main/instanceof.md)
