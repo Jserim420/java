@@ -6,6 +6,7 @@
     - [객체 지향 프로그래밍(OOP)](https://github.com/Jserim420/java/blob/main/Java-study/OOP.md)
     - [상수(static, final, static final)](https://github.com/Jserim420/java/blob/main/Java-study/static.md)
     - [접근제한자](https://github.com/Jserim420/java/blob/main/Java-study/AccessModifier.md)
+    - [인터페이스](https://github.com/Jserim420/java/blob/main/Java-study/interface.md)
     - 어노테이션
 - 자바 함수 정리
     - 문자열 관련 함수
