@@ -13,6 +13,7 @@
         - [StringTokenizer();](https://github.com/Jserim420/java/blob/main/stringTokenizer.md)
             - charAt();
         - [toString();](https://github.com/Jserim420/java/blob/main/toString.md)
+        - [parseInt();](https://github.com/Jserim420/java/blob/main/parseInt.md)
     - 입출력 관련 함수
         - [Scanner();](https://github.com/Jserim420/java/blob/main/Scanner.md)
         - [BufferdReader(); / BufferedWriter();](https://github.com/Jserim420/java/blob/main/bufferd_IO.md)
