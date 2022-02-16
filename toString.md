@@ -15,6 +15,8 @@
     System.out.println(obj1.toString());
     System.out.prinltln(Obj2.toString());
     ```
+    <br>
+
 2. 오버라이딩(함수 재정의)
     ```java
     public class myInfo{
@@ -46,3 +48,25 @@
     ```
     - 매개값이 개본 타입일 경우, 해당 값 그대로 출력
     - **매개값으로 객체를 주면 객체의 ```toString()```메소드를 호출해 리턴값을 받아 출력**
+
+<Br>
+
+3. ```Integer.toString();``` 
+- 숫자(Int)를 문자열(String)로 변환
+
+    ```java
+    String s1 = Integer.toString(123)
+    String s2 = Integer.toString(456);
+    String result = s1 + s2;
+
+    System.out.println(s1);
+    System.out.println(s2);
+    System.out.println(result);
+    ```
+    
+    > 결과
+    ```
+    123
+    456
+    123456
+    ```
