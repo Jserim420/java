@@ -7,7 +7,7 @@
     - [상수(static, final, static final)](https://github.com/Jserim420/java/blob/main/Java-study/static.md)
     - [접근제한자](https://github.com/Jserim420/java/blob/main/Java-study/AccessModifier.md)
     - [인터페이스](https://github.com/Jserim420/java/blob/main/Java-study/interface.md)
-    - [중첩클래스](https://github.com/Jserim420/java/blob/main/Java-study/Nested Class.md)
+    - [중첩클래스](https://github.com/Jserim420/java/blob/main/Java-study/Nested%20Class.md)
     - [익명 객체](https://github.com/Jserim420/java/blob/main/Java-study/anonymous.md)
     - 어노테이션
 - 자바 함수 정리
