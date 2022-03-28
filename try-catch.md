@@ -171,3 +171,9 @@ catch(Exception e) {
     e.printStackTrace();
 }
 ```
+
+<br><br>
+
+# 예시
+- [은행 잔고 부족 예외 처리](https://github.com/Jserim420/java-example/tree/main/java_example/src/BankException)
+- [로그인 오류 예외 처리](https://github.com/Jserim420/java-example/tree/main/out/production/java-exam/LoginException)
