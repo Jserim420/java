@@ -49,9 +49,10 @@
     - 매개값이 개본 타입일 경우, 해당 값 그대로 출력
     - **매개값으로 객체를 주면 객체의 ```toString()```메소드를 호출해 리턴값을 받아 출력**
 
-<Br>
+<Br><Br>
 
-3. ```Integer.toString();``` 
+
+# ```Integer.toString();``` 
 - 숫자(Int)를 문자열(String)로 변환
 
     ```java
