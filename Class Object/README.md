@@ -4,8 +4,8 @@
 - ```Object```는 자바의 최상위 부모 클래스에 해당
 
 ## 메소드
-- [객체 비교 (equals())]()
-- [객체 해시코드(hashCode())]()
-- [객체 문자 정보(toString())]()
-- [객체 복제(clone())]()
-- [객체 소멸자(finalize())]()
+- [객체 비교 (equals())](https://github.com/Jserim420/java/blob/main/Class%20Object/equals.md)
+- [객체 해시코드(hashCode())](https://github.com/Jserim420/java/blob/main/Class%20Object/hashCode.md)
+- [객체 문자 정보(toString())](https://github.com/Jserim420/java/blob/main/Class%20Object/toString.md)
+- [객체 복제(clone())](https://github.com/Jserim420/java/blob/main/Class%20Object/clone.md)
+- [객체 소멸자(finalize())](https://github.com/Jserim420/java/blob/main/Class%20Object/finalize.md)
