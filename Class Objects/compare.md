@@ -1,5 +1,5 @@
 # compare(T a, T b, Comparator <<T>T>c)
-- 두 객체를 비교자(Conmparator)로 비교해서 ```int``` 값 리턴
+- 두 객체를 비교자(Comparator)로 비교해서 ```int``` 값 리턴
 - ```Comparator<<T>T>``` : 제네릭 인터페이스 타입으로 두 객체를 비교하는 ```compare(T a, T b)```가 정의되어 있음
     ```java
     public interface Comparator<T> {
