@@ -108,4 +108,4 @@ thread.setPriority(Thread.MIN_PRIORITY); // 1
         // 여러 스레드가 실행 가능한 영역
     }
     ```
-- [예시](https://github.com/Jserim420/java/tree/main/java-project/Thread)
+- [예시](https://github.com/Jserim420/java/tree/main/java-example/Thread/threadExample)
