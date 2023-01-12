@@ -50,7 +50,7 @@ stringBuffer.reverse();
 - ```delete(int start, int end)``` , ```deleteCharAt(int index)``` : 문자열 삭제
 ```java
 stringBuffer.delete(4,7); // 4번 인덱스부터 6번 인덱스까지 문자열 삭제
-strinbFuffer.deleteCharAt(4); // 4번 인덱스 문자 삭제
+stringBuffer.deleteCharAt(4); // 4번 인덱스 문자 삭제
 ```
 
 
