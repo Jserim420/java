@@ -14,14 +14,14 @@
 - 자바 API Document 정리
     - 문자열 관련
         - [String.split();](https://github.com/Jserim420/java/blob/main/split.md)
-        - [StringTokenizer();](https://github.com/Jserim420/java/blob/main/stringTokenizer.md)
+        - [StringTokenizer();]()
             - charAt();
         - [toString();](https://github.com/Jserim420/java/blob/main/Class%20Object/toString.md)
         - [parseInt();](https://github.com/Jserim420/java/blob/main/parseInt.md)
-        - [StringBuffer](https://github.com/Jserim420/java/blob/main/stringBuffer.md)
+        - [StringBuffer]()
     - 입출력 관련
-        - [Scanner();](https://github.com/Jserim420/java/blob/main/Scanner.md)
-        - [BufferdReader(); / BufferedWriter();](https://github.com/Jserim420/java/blob/main/bufferd_IO.md)
+        - [Scanner();]()
+        - [BufferdReader(); / BufferedWriter();]()
     - 기타
         - 객체타입 확인 - [instanceof();](https://github.com/Jserim420/java/blob/main/instanceof.md)
         - 예외 처리 - [try- catch-](https://github.com/Jserim420/java/blob/main/try-catch.md)
