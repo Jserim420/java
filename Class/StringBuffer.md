@@ -1,4 +1,4 @@
-# StringBuffer
+# StringBuffer (java.lang.StringBuffer)
 
 ## string 과의 차이 
 - ```string```은 고정 길이의 불변문자열이므로 객체 변경시 객체가 변경되는 것이 아니라 새로운 객체를 생성하여 변경된다.
