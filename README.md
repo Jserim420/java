@@ -11,14 +11,15 @@
     - [익명 객체](https://github.com/Jserim420/java/blob/main/Java-study/anonymous.md)
     - 어노테이션
 
-- 자바 함수 정리
-    - 문자열 관련 함수
+- 자바 API Document 정리
+    - 문자열 관련
         - [String.split();](https://github.com/Jserim420/java/blob/main/split.md)
         - [StringTokenizer();](https://github.com/Jserim420/java/blob/main/stringTokenizer.md)
             - charAt();
         - [toString();](https://github.com/Jserim420/java/blob/main/Class%20Object/toString.md)
         - [parseInt();](https://github.com/Jserim420/java/blob/main/parseInt.md)
-    - 입출력 관련 함수
+        - [StringBuffer](https://github.com/Jserim420/java/blob/main/stringBuffer.md)
+    - 입출력 관련
         - [Scanner();](https://github.com/Jserim420/java/blob/main/Scanner.md)
         - [BufferdReader(); / BufferedWriter();](https://github.com/Jserim420/java/blob/main/bufferd_IO.md)
     - 기타
