@@ -1,8 +1,10 @@
 # 자바 기본 API 클래스
 - [Oracle API Documents](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html)
 
+<br>
+
 ## java.lang.*
-- 자바 프로그램의 기본적인 클래스를 담고 있는 패키지(import 없이 사용)
+- <b>자바 프로그램의 기본적인 클래스를 담고 있는 패키지(import 없이 사용)</b>
 - [Object](https://github.com/Jserim420/java/tree/main/Class/Object) : 자바 클래스의 최상위 클래스
 - [System] : 입출력, JVM종료, 쓰레기 수집기 요청
 - [Class] : 클래스를 메모리로 로딩
@@ -11,6 +13,7 @@
 - [Math] : 수학 함수
 - [Wrapper] : 기본 타입의 데이터 객체 사용
 
+<Br>
 
 ## java.util.*
 - [Arrays](https://github.com/Jserim420/java/blob/main/Class/Arrays.md) : 배열을 조작
@@ -21,8 +24,10 @@
 - [StringTokenizer](https://github.com/Jserim420/java/blob/main/Class/StringTokenizer.md) : 특정 문자로 구분된 문자열 뽑기
 - [Random] : 난수 생성
 
+<br>
+
 ## java.io.*
-- 데이터를 외부에서 입출력하는 작업을 담고 있는 패키지
+- <b>데이터를 외부에서 입출력하는 작업을 담고 있는 패키지</b>
 - [File] : 파일 시스템의 파일 정보 수집
 - [Console] : 콘솔로부터 문자를 입출력
 - [InputStream/OutPutStream] : 바이트 단위 입출력을 위한 최상위 입출력 스트림
