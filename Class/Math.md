@@ -16,3 +16,4 @@
 - ```rint(double a)``` : 가까운 정수의 실수값
 - ```round(double a)``` : 반올림값
 - ```sqrt(double a)``` : 제곱근값
+- ```pow(double a, double b)``` : a를 b제곱한 값
