@@ -28,9 +28,21 @@
     str.indexOf("메소드"); // str에 "메소드"가 포함된 인덱스 번호 7 리턴
     ```
 
+- ```join(CharSequence delimiter, CharSequence elements)``` : 문자열 배열 이어붙이기
+    ```java
+    String[] strs = {"서울" , "경기", "인천"};
+    String delimiter = ", ";
+    result = String.join(delimiter, strs); // "서울", "경기", "인천"
+    ```
+
 - ```length()``` : 총 문자 수 리턴
     ```java
-    str.length(); /// str의 길이 10 리턴
+    str.length(); // str의 길이 10 리턴
+    ```
+
+- ```repeat(int count)``` : 문자열 반복
+    ```java
+    strt.repeat(5); // str을 5번 반복한 문자열 리턴
     ```
 
 - ```replace​(CharSequence target, CharSequence replacement)``` : 특정 문자열을 대체 문자열로 변경
