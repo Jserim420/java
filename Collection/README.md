@@ -3,7 +3,7 @@
 - 배열의 문제점을 해결하고 자료구조를 바탕으로 객체들을 효율적으로 추가, 삭제, 검색할 수 있도록 ```java.util``` 패키지에 컬렉션과 관련된 인터페이스와 클래스들을 포함
 - 컬렉션 프레임워크 : 몇 가지 인터페이스를 통해 다양한 컬렉션 클래스를 이용할 수 있도록 함
 - 주요 인터페이스
-    - ```Collection``` : 
+    - ```Collection``` : ```List```와 ```Set```의 공통된 메소드를 모아 정의
         - [List](https://github.com/Jserim420/java/blob/main/Collection/List.md) : 순서를 유지하고 저장
             - ArrayList, Vector, LinkedList
         - Set : 순서를 유지하지 않고 저장
