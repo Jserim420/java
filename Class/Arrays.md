@@ -7,6 +7,11 @@
 ## Arrays 메소드
 - [Oracle API Documents](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html)
 
+- ```asList(T... a)``` : 고정된 객체들로 구성된 List 생성
+    ```java
+    List<String> list = Arrays.asList("Java", "java", "JAVA");
+    ```
+
 - ```binarySearch(배열, 찾는값)``` : 전체 배열 항목에서 찾는 값이 있는 인덱스 리턴(배열이 정렬되어 있는 경우에 사용)
     ```java
     String[] stringArr = {"Ant" , "C" , "Github" , "Java"};
