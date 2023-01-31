@@ -6,12 +6,11 @@
     - ```Collection``` : ```List```와 ```Set```의 공통된 메소드를 모아 정의
         - [List](https://github.com/Jserim420/java/blob/main/Collection/List.md) : 순서를 유지하고 저장
             - ArrayList, Vector, LinkedList
-        - Set : 순서를 유지하지 않고 저장
+        - [Set](https://github.com/Jserim420/java/blob/main/Collection/Set.md) : 순서를 유지하지 않고 저장
             - HashSet, TreeSet
     - Map : 키와 값을 하나의 쌍으로 저장
         - HashMap, Hashtable, TreeMap, Properties
 
-<br>
 <br>
 
 ### 배열의 단점
