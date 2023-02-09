@@ -1,4 +1,6 @@
 # Collection (컬렉션)
+![Collection](https://blog.kakaocdn.net/dn/DhAEy/btradRzasBQ/CjKa3OnW5k8tGYrkrqjVJ1/img.png)
+
 - 객체를 수쥡해 저장하는 역할
 - 배열의 문제점을 해결하고 자료구조를 바탕으로 객체들을 효율적으로 추가, 삭제, 검색할 수 있도록 ```java.util``` 패키지에 컬렉션과 관련된 인터페이스와 클래스들을 포함
 - 컬렉션 프레임워크 : 몇 가지 인터페이스를 통해 다양한 컬렉션 클래스를 이용할 수 있도록 함
@@ -10,6 +12,8 @@
             - HashSet, TreeSet
     - Map : 키와 값을 하나의 쌍으로 저장
         - HashMap, Hashtable, TreeMap, Properties
+- 기타
+    - [Iterator](https://github.com/Jserim420/java/blob/main/Collection/Iterator.md) : 반복자
 
 <br>
 
