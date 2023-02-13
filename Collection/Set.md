@@ -26,7 +26,7 @@
 
 <br><br>
 
-# ```HastSet```
+# ```HashSet```
 - ```Set 인터페이스```의 구현 클래스로, 객체들을 순서 없이 저장하고 동일한 객체는 중복 저장하지 않는다.
 - 동일한 객체란 꼭 같은 인스턴스를 뜻하지는 않는다.
 
@@ -39,3 +39,11 @@
     -``` String클래스```에 ```hashCode()```와 ```equals()``` 메소드가 재정의 되어 있기 때문
     - ```hashCode()``` 와 ```equals()``` 오버라이딩을 통해 사용자 정의 클래스에서 객체의 동일성을 직접 판단할 수 있다. 
 
+<br><br>
+
+# ```TreeSet```
+- 검색 기능을 강화시킨 ```Map 컬렉션```
+- [이진트리](https://github.com/Jserim420/Computuer_Science/blob/main/Data_Structure/NonLinear.md#%ED%8A%B8%EB%A6%AC-%EC%A2%85%EB%A5%98) 를 이용해 계층적 구조를 가지면서 객체를 저장
+
+![TreeSet](https://user-images.githubusercontent.com/81462623/218412921-e97c2393-a65e-4f4e-ae18-2819cc8bdb95.png)
+- 노드의 구성 : 노드값 Value + 왼쪽 값 + 오른쪽 값
