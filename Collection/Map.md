@@ -98,3 +98,69 @@ Map<String, Integer> map = new HashMap<String, Integer>();
         V newValue = entry.getValue(); // Map.Entry 객체의 값 얻기
     }
     ```
+
+<br><br>
+
+# ```HashMap```
+```java
+Map<K, V> map = new HashMap<K, V>();
+// K: key타입, V: value타입
+```
+
+- ```Map 인터페이스```를 구현한 대표적인 Map 컬렉션
+- ```HashMap```의 '키'로 사용할 객체는 ```hashCode()```와 ```equals()``` 메소드를 재정의해 동등 객체가 될 조건을 정해야 한다
+    ```
+    동등 객체 조건
+    
+    1. hashCode()의 리턴값이 동일
+    2. equals() 메소드가 true를 리턴
+
+    키 타입을 String으로 사용할 경우 
+    - 문자열이 같으면 동등객체가 될 수 있도록 메소드가 재정의 되어 있음
+    ```
+- 키와 값의 타입은 기본 타입을 사용할 수 없고 클래스 및 인터페이스 타입만 가능
+
+<br><br>
+
+# ```Hashtable```
+```java
+Map<K, V> map = new Hashtable<String, IntegerK, V>();
+// K: key타입, V: value타입
+```
+- ```HashMap```과 동일한 내부 구조를 가지고 있어, ```Hashtable```의 키로 사용될 객체도 동등 객체가 될 조건을 정해야 한다.
+
+- ```Hashtable``` 은 ```HashMap``` 과 달리, 동기화된 ```synchronized``` 메소드로 구성되어 있기 때문에 멀티 스레드가 동시에 이 메소드를 실행 불가능
+
+<br>
+
+## [Properties (java.util.Properties)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html)
+- Hashtable의 하위 클래스 ```extends Hashtable<Object, Object>```
+- Hashtable과의 차이점 : 키와 값을 String 타입으로 제한 
+- 애플리케이션의 옵션 정보, 데이터베이스 연결 정보, 국제화 정보가 저장된 프로퍼티 ```.properties``` 파일을 읽을 때 주로 사용
+
+    ```
+    프로퍼티 파일
+    - 키와 값이 = 기호로 연결되어 있는 텍스트 파일, ISO 8859-1 문자셋
+    - 문자셋으로 직접 표현할 수 없는 한글은 유니코드로 변환
+    ```
+
+<br>
+
+## 프로퍼티 파일 읽기
+- ```Properties``` 객체 생성 후 , ```load()``` 호출
+- 프로퍼티 파일은 일반적으로 클래스 파일 ```.class``` 과 함께 저장
+- ```load()``` : 프로퍼티 파일로부터 데이터를 읽기 위해 FileReader 객체를 매개 값으로 받는다.
+    ```java
+    Properties properties = new Properties();
+    properties.load(new FileReader("프로퍼티 파일 경로"));
+    ```
+
+- ```getResource()``` : 클래스 파일을 기준으로 상대 경로를 이용해 프로퍼티 파일의 경로 얻기
+    - ```getResource()```는 주어진 파일의 상대 경로를 URL 객체로 리턴
+- ```getPath()``` : 해당 URL 파일의 절대 경로 리턴
+    ```java
+    String path = 클래스.class.getResource("프로퍼티 파일 경로").getPath()
+    ```
+
+- ```getProperty()``` : ```Properties``` 객체에서 해당 키의 값 읽기
+    - ```Properties``` 도 ```Map 컬렉션``` 이므로 ```get()``` 메소드를 사용할 수 있지만, ```get()``` 메소드는 값을 ```Object``` 타입으로 리턴하므로 일반적으로 ```getProperty()``` 사용
