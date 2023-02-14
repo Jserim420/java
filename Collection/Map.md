@@ -140,7 +140,7 @@ Map<K, V> map = new Hashtable<String, IntegerK, V>();
 
     ```
     프로퍼티 파일
-    - 키와 값이 = 기호로 연결되어 있는 텍스트 파일, ISO 8859-1 문자셋
+    - 키와 값이 = 기호로 연결되어 있는 텍스트 파일(키=값), ISO 8859-1 문자셋
     - 문자셋으로 직접 표현할 수 없는 한글은 유니코드로 변환
     ```
 
@@ -159,8 +159,68 @@ Map<K, V> map = new Hashtable<String, IntegerK, V>();
     - ```getResource()```는 주어진 파일의 상대 경로를 URL 객체로 리턴
 - ```getPath()``` : 해당 URL 파일의 절대 경로 리턴
     ```java
-    String path = 클래스.class.getResource("프로퍼티 파일 경로").getPath()
+    String path = 클래스.class.getResource("프로퍼티 파일 경로").getPath();
+    path = URLDecorder.decode(path, "utf-8"); //utf-8로 변환
+    Properties properties = new Peoperties();
+    properties.load(new FileReader(path));
     ```
 
 - ```getProperty()``` : ```Properties``` 객체에서 해당 키의 값 읽기
     - ```Properties``` 도 ```Map 컬렉션``` 이므로 ```get()``` 메소드를 사용할 수 있지만, ```get()``` 메소드는 값을 ```Object``` 타입으로 리턴하므로 일반적으로 ```getProperty()``` 사용
+    ```java
+    String value = properties.getProperty("키 값");
+    ```
+
+<br><br>
+
+# ```TreeMap``` (java.util.TreeMap<K,V>)
+- 검색 기능을 강화시킨 ```Map 컬렉션```
+- [이진트리](https://github.com/Jserim420/Computuer_Science/blob/main/Data_Structure/NonLinear.md#%ED%8A%B8%EB%A6%AC-%EC%A2%85%EB%A5%98) 를 이용해 계층적 구조를 가지면서 객체를 저장
+
+    ![TreeSet](https://user-images.githubusercontent.com/81462623/218675930-094046fe-9544-4648-b94a-3b6516c9cd31.png)
+    - 노드의 구성 : 노드값 Value + 왼쪽 값 + 오른쪽 값
+
+```java
+TreeMap<K, V> treeMap = new TreeMap<K, V>();
+// K: 키 타입, V: 값 타입
+```
+
+<br>
+
+## [TreeMap 클래스의 메소드](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html)
+> 검색
+- ```ceilingEntry(K key)``` : 주어진 키와 동등한 키가 있으면 해당 ```Map.Entry``` 리턴, 없으면 바로 위의 ```Map.Entry``` 리턴
+- ````firstEntry()```` : 제일 낮은 ```Map.Entry``` 리턴
+- ````floorEntry(E e)```` : 주어진 키와 동등한 키가 있으면 해당 ```Map.Entry``` 리턴, 없으면 바로 아래의 ```Map.Entry``` 리턴
+- ````higherEntry(E e)```` : 주어진 키보다 바로 위 ```Map.Entry``` 리턴
+- ````last()```` : 제일 높은 ```Map.Entry``` 리턴
+- ````lower(E e)```` : 주어진 키보다 바로 아래 ```Map.Entry``` 리턴
+- ````pollFirstEntry()```` : 제일 낮은 ```Map.Entry``` 를 꺼내오고 컬렉션에서 제거
+- ````pollLastEntry()```` : 제일 높은 ```Map.Entry``` 를 꺼내오고 컬렉션에서 제거
+
+> 정렬
+- ```descendingKeySet()``` : 내림차순으로 정렬된 키의 ```[NavigableSet](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html)``` 을 리턴
+- ```descendingMap()``` : 내림차순으로 정렬된 ```Map.Entry``` 의 ```[NavigableMap](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html)``` 을 리턴
+    - 오름차순 정렬 : ```descendingMap()``` 메소드 두번 호출
+
+> 범위 검색
+- ```headMap(K toKey, boolean inclusive)``` : 주어진 키보다 낮은 ```Map.Entry``` 들을 ```NavigableMap``` 으로 리턴
+    - 주어진 키의 ```Map.Entry``` 포함 여부는 ```inclusive``` 에 따라 달라짐
+    ```java
+    TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
+    NavigableMap<String> rangeMap = treeMap.headMap("K", false);
+    // "K"를 포함하지 않은 다음 "L"부터의 Map.Entry 검색
+    ```
+- ```tailMap(K fromKey, boolean inclusive)``` : 주어진 키보다 높은 ```Map.Entry``` 들을 ```NavigableMap``` 으로 리턴
+    - 주어진 키의 ```Map.Entry``` 포함 여부는 ```inclusive``` 에 따라 달라짐
+    ```java
+    TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
+    NavigableMap<String> rangeMap = treeMap.tailMap("A", true);
+    // "A"를 포함하는 "A"부터의 Map.Entry 검색
+    ```
+- ```subMap(K fromKey, boolean fromInclusive, K toKey, boolean toInclusive)``` : 시작과 끝으로 주어진 키 사이의``` Map.Entry``` 들을 ``NavigableMap`` 컬렉션으로 반환
+    - 시작과 끝의 키 ```Map.Entry``` 포함 여부는 ```fromInclusive```, ```toInclusive``` 에 따라 달라짐
+    ```java
+    TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
+    NavigableMap<String> rangeMap = treeMap.subMap("A", true, "F", false);
+    // A~E 까지의 Map.Entry 검색
