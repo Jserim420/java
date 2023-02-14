@@ -41,9 +41,53 @@
 
 <br><br>
 
-# ```TreeSet```
+# ```TreeSet``` (java.util.TreeSet<<E>E>)
 - 검색 기능을 강화시킨 ```Map 컬렉션```
 - [이진트리](https://github.com/Jserim420/Computuer_Science/blob/main/Data_Structure/NonLinear.md#%ED%8A%B8%EB%A6%AC-%EC%A2%85%EB%A5%98) 를 이용해 계층적 구조를 가지면서 객체를 저장
 
 ![TreeSet](https://user-images.githubusercontent.com/81462623/218412921-e97c2393-a65e-4f4e-ae18-2819cc8bdb95.png)
 - 노드의 구성 : 노드값 Value + 왼쪽 값 + 오른쪽 값
+
+```java
+TreeeSet<E> treeSet = new TreeSet<E>();
+```
+
+<br>
+
+## [TreeSet 클래스의 메소드](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html)
+
+> 검색
+- ```ceiling(E e)``` : 주어진 객체와 동등한 객체가 있으면 리턴, 없으면 바로 위의 객체 리턴
+- ````first()```` : 제일 낮은 객체 리턴
+- ````floor(E e)```` : 주어진 객체와 동등한 객체가 있으면 리턴, 없으면 바로 아래의 객체 리턴
+- ````higher(E e)```` : 주어진 객체보다 바로 위 객체 리턴
+- ````last()```` : 제일 높은 객체 리턴
+- ````lower(E e)```` : 주어진 객체보다 바로 아래 객체 리턴
+- ````pollFirst()```` : 제일 낮은 객체를 꺼내오고 컬렉션에서 제거
+- ````pollLast()```` : 제일 높은 객체를 꺼내오고 컬렉션에서 제거
+
+> 정렬
+- ```descendingIterator()``` : 내림차순으로 정렬된 ```Iterator``` 리턴
+- ```descendingSet()``` : 내림차순으로 정렬된 ```[NavigableSet](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html)``` 리턴
+    - 정렬 순서를 바꾸고 싶으면 ```dexcendingSet()```을 두번 호출
+
+> 범위 검색
+- ```headSet(E toElement, boolean inclusive)``` : 주어진 객체보다 낮은 객체들은 ```NavigableSet``` 으로 리턴
+    - 주어진 객체 포함 여부는 ```inclusive``` 에 따라 달라짐
+    ```java
+    TreeSet<String> treeSet = new TreeSet<String>();
+    NavigableSet<String> rangeSet = treeSet.headSet("K", false);
+    // "K"를 포함하지 않은 다음 "L"부터의 단어 검색
+    ```
+- ```tailSet(E fromElement, booleadn inclusive)``` : 주어진 객체보다 높은 객체들은 ```NavigableSet``` 으로 리턴
+    - 주어진 객체 포함 여부는 ```inclusive``` 에 따라 달라짐
+    ```java
+    NavigableSet<String> rangeSet = treeSet.tailSet("A", ture) 
+    // "A"을 포함하여 "A"부터의 단어 검색
+    ```
+- ``subSet(E fromElement, boolean fromInclusive, E toElement, boolean toInclusive)`` : 시작과 끝으로 주어진 객체 사이의 객체들을 ```NavigableSet``` 으로 리턴
+    - 시작과 끝 객체의 포함 여부는 ```fromInclusive```, ```toInclusive```에 따라 달라짐
+    ```java
+    TreeSet<String> treeSet = new TreeSet<String>();
+    NavigableSet<String> rangeSet = treeSet.subSet("A", true, "D", true) // A~D 사이의 단어 검색
+    ```
